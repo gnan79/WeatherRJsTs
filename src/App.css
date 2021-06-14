@@ -1,0 +1,47 @@
+.level .level-item {
+  margin-bottom: 50px !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .search-form input {
+    width: 70%;
+  }
+  .search-form button {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .search-form input {
+    width: 70%;
+  }
+  .search-form button {
+    width: 25%;
+  }  
+}
+@media only screen and (min-width: 768px) {
+  .search-form input {
+    width: 80%;
+  }
+  .search-form button {
+    width: 18%;
+  }  
+}
+
+@media only screen and (min-width: 992px) {
+  .search-form input {
+    width: 80%;
+  }
+  .search-form button {
+    width: 18%;
+  }  
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .search-form input {
+    width: 90%;
+  }
+  .search-form button {
+    width: 8%;
+  }  
+}
