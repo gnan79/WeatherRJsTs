@@ -12,23 +12,23 @@ const Weather: FC<WeatherProps> = ({ data }) => {
     return(
         <section className="section">
             <div className="conatiner">
-                <h1 className="title has-text-centered"  style={{marginBottom: 50}}>{data.name} - {data.sys.country}</h1>
-                <div className="level" style={{alignItems: 'flex-start'}}> 
+                <h2>Live Weather Report</h2>
                 <div className="levl-item has-text-centered">
                 <div>
-                    <p className="heading">{data.weather[0].description}</p>
                     <p className="title"><img src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} alt=""/></p>
+                    <p className="heading">{data.weather[0].description}</p>
                 </div>
                 </div>
-                <div className="level-item.-text-centered">
+                <div className="level-item has-text-centered">
                     <div>
-                        <p className="heading">temp</p>
+                        <p className="heading"></p>
                         <div className="title">
-                            <p className="mb-2">{parseInt(fahrenheit)}&deg;F </p>
-                            <p>{parseInt(celsius)}&deg;C </p>
+                            <p className="mb-2">{parseInt(celsius)}&deg;C || {parseInt(fahrenheit)}&deg;F</p>
                         </div>
                     </div>
                 </div>
+                <h1 className="title has-text-centered"  style={{marginBottom: 50}}>{data.name} - {data.sys.country}</h1>
+                <div className="level" style={{alignItems: 'flex-start'}}> 
                 <div className="level-item has-text-centered">
                     <div>
                         <p className="heading">humidity</p>
